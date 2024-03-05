@@ -1,0 +1,81 @@
+/* video-js.css */
+
+/* Video.js base CSS */
+.video-js {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  background-color: #000;
+  overflow: hidden;
+}
+
+/* Hide default controls */
+.video-js .vjs-default-skin .vjs-control-bar {
+  display: none;
+}
+
+/* Show custom controls */
+.video-js .vjs-control-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+/* Style play/pause button */
+.video-js .vjs-play-control,
+.video-js .vjs-pause-control {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+/* Style progress bar */
+.video-js .vjs-progress-control {
+  flex-grow: 1;
+}
+
+.video-js .vjs-progress-holder,
+.video-js .vjs-load-progress,
+.video-js .vjs-play-progress {
+  height: 4px;
+  background-color: #fff;
+}
+
+.video-js .vjs-load-progress {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.video-js .vjs-play-progress {
+  background-color: #fff;
+}
+
+/* Style volume control */
+.video-js .vjs-volume-control {
+  margin-right: 10px;
+}
+
+.video-js .vjs-volume-panel {
+  width: 80px;
+}
+
+.video-js .vjs-volume-level {
+  height: 4px;
+  background-color: #fff;
+}
+
+/* Style fullscreen button */
+.video-js .vjs-fullscreen-control {
+  margin-left: auto;
+  font-size: 20px;
+  cursor: pointer;
+  margin-right: 10px;
+}
